@@ -11,10 +11,11 @@ If you find this useful, please cite this work as follows:
 ## Getting Started
 ```
 git clone https://github.com/orhir/STG-NF
+cd STG-NF
 
 # Conda environment setup
-
 conda env create -f environment.yml
+conda activate STG-NF
 ```
 
 ## Directory Structure

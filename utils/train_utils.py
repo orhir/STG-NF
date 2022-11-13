@@ -5,7 +5,7 @@ import torch
 
 def init_model_params(args, dataset):
     return {
-        'image_shape': dataset["test"][0][0].shape if args.model_confidence else dataset["test"][0][0][:2].shape,
+        'pose_shape': dataset["test"][0][0].shape if args.model_confidence else dataset["test"][0][0][:2].shape,
         'hidden_channels': args.model_hidden_dim,
         'K': args.K,
         'L': args.L,

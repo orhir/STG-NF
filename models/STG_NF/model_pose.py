@@ -203,7 +203,7 @@ class FlowStep(nn.Module):
 class FlowNet(nn.Module):
     def __init__(
             self,
-            image_shape,
+            pose_shape,
             hidden_channels,
             K,
             L,
@@ -224,7 +224,7 @@ class FlowNet(nn.Module):
 
         self.K = K
 
-        C, T, V = image_shape
+        C, T, V = pose_shape
         for i in range(L):
             if i > 1:
                 # 1. Squeeze
@@ -280,7 +280,7 @@ class FlowNet(nn.Module):
 class STG_NF(nn.Module):
     def __init__(
             self,
-            image_shape,
+            pose_shape,
             hidden_channels,
             K,
             L,
@@ -298,7 +298,7 @@ class STG_NF(nn.Module):
     ):
         super().__init__()
         self.flow = FlowNet(
-            image_shape=image_shape,
+            pose_shape=pose_shape,
             hidden_channels=hidden_channels,
             K=K,
             L=L,
