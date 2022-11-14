@@ -201,3 +201,4 @@ dmypy.json
 data/ShanghaiTech/pose/
 data/UBnormal/pose/
 runs/*
+data/exp_dir/*

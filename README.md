@@ -44,7 +44,7 @@ conda activate STG-NF
 ```
 
 ### Data Directory
-Data folder, including extradted poses and GT, can be downloaded using the [link]().
+Data folder, including extradted poses and GT, can be downloaded using the [link](https://drive.google.com/file/d/1o9h3Kh6zovW4FIHpNBGnYIRSbGCu-qPt/view?usp=sharing).
 
 The data directory holds pose graphs and ground truth vectors for the datasets.
 A path for the directory may be configured using teh arguments:
