@@ -2,6 +2,9 @@
 
 This is the code for our paper ["Normalizing Flows for Human Pose Anomaly Detection"](https://arxiv.org/abs/2211.10946).
 
+
+![Framework_Overview](data/arch.png)
+
 ## Cititation
 If you find this useful, please cite this work as follows:
 ```
