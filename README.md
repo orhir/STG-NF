@@ -103,7 +103,12 @@ Supervised UBnormal
 python train_eval.py --dataset UBnormal --seg_len 16 --R 10 --checkpoint checkpoints/UBnormal_supervised_79_2.tar
 ```
 
-## References
+## Acknowledgments
 Our code is based on code from:
 - [Graph Embedded Pose Clustering for Anomaly Detection](https://github.com/amirmk89/gepc)
 - [Glow](https://github.com/y0ast/Glow-PyTorch)
+
+## License
+This code is distributed under a [Creative Commons LICENSE](LICENSE).
+
+Note that our code depends on other libraries and uses datasets that each have their own respective licenses that must also be followed.
