@@ -5,7 +5,7 @@
 
 
 
-The official PyTorch implementation of the paper[**"Normalizing Flows for Human Pose Anomaly Detection"**](https://arxiv.org/abs/2211.10946).
+The official PyTorch implementation of the paper [**"Normalizing Flows for Human Pose Anomaly Detection"**](https://arxiv.org/abs/2211.10946).
 
 
 ![Framework_Overview](data/arch.png)
