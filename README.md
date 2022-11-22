@@ -1,6 +1,11 @@
 # Normalizing Flows for Human Pose Anomaly Detection
+[![arXiv](https://img.shields.io/badge/arXiv-<2211.10946>-<COLOR>.svg)](https://arxiv.org/abs/2211.10946)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/normalizing-flows-for-human-pose-anomaly/anomaly-detection-on-shanghaitech)](https://paperswithcode.com/sota/anomaly-detection-on-shanghaitech?p=normalizing-flows-for-human-pose-anomaly)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/normalizing-flows-for-human-pose-anomaly/anomaly-detection-on-ubnormal)](https://paperswithcode.com/sota/anomaly-detection-on-ubnormal?p=normalizing-flows-for-human-pose-anomaly)
 
-This is the code for our paper ["Normalizing Flows for Human Pose Anomaly Detection"](https://arxiv.org/abs/2211.10946).
+
+
+The official PyTorch implementation of the paper[**"Normalizing Flows for Human Pose Anomaly Detection"*](https://arxiv.org/abs/2211.10946).
 
 
 ![Framework_Overview](data/arch.png)
@@ -8,18 +13,22 @@ This is the code for our paper ["Normalizing Flows for Human Pose Anomaly Detect
 ## Cititation
 If you find this useful, please cite this work as follows:
 ```
-@misc{https://doi.org/10.48550/arxiv.2211.10946,
-  doi = {10.48550/ARXIV.2211.10946},
-  url = {https://arxiv.org/abs/2211.10946},
-  author = {Hirschorn, Or and Avidan, Shai},
+@article{hirschorn2022human,
   title = {Normalizing Flows for Human Pose Anomaly Detection},
-  publisher = {arXiv},
+  author = {Hirschorn, Or and Avidan, Shai},
+  journal={arXiv preprint arXiv:2211.10946},
   year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
 }
 ```
 
 ## Getting Started
+
+This code was tested on `Ubuntu 20.04.4 LTS` and requires:
+* Python 3.8
+* conda3 or miniconda3
+* CUDA capable GPU (one is enough)
+
+### Setup Conda Environment:
 ```
 git clone https://github.com/orhir/STG-NF
 cd STG-NF
@@ -29,7 +38,7 @@ conda env create -f environment.yml
 conda activate STG-NF
 ```
 
-## Directory Structure
+### Directory Structure
 ```
 .
 ├── checkpoints
