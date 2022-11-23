@@ -10,7 +10,7 @@ The official PyTorch implementation of the paper [**"Normalizing Flows for Human
 
 ![Framework_Overview](data/arch.png)
 
-## Cititation
+## Citation
 If you find this useful, please cite this work as follows:
 ```
 @article{hirschorn2022human,
