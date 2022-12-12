@@ -9,12 +9,11 @@ from tqdm import tqdm
 plt.style.use('seaborn-ticks')
 
 
-def get_ab_labels(global_data_np_ab, segs_meta_ab, segs_root=None):
+def get_ab_labels(global_data_np_ab, segs_meta_ab, path_to_vid_dir='', segs_root=''):
     pose_segs_root = segs_root
     clip_list = os.listdir(pose_segs_root)
     clip_list = sorted(
         fn.replace("alphapose_tracked_person.json", "annotations") for fn in clip_list if fn.endswith('.json'))
-    per_frame_scores_root = 'data/UBnormal/videos/'
     labels = np.ones_like(global_data_np_ab)
     for clip in tqdm(clip_list):
         type, scene_id, clip_id = re.findall('(abnormal|normal)_scene_(\d+)_scenario(.*)_annotations.*', clip)[0]
@@ -24,7 +23,7 @@ def get_ab_labels(global_data_np_ab, segs_meta_ab, segs_root=None):
         clip_metadata_inds = np.where((segs_meta_ab[:, 1] == clip_id) &
                                       (segs_meta_ab[:, 0] == scene_id))[0]
         clip_metadata = segs_meta_ab[clip_metadata_inds]
-        clip_res_fn = os.path.join(per_frame_scores_root, "Scene{}".format(scene_id), clip)
+        clip_res_fn = os.path.join(path_to_vid_dir, "Scene{}".format(scene_id), clip)
         filelist = sorted(os.listdir(clip_res_fn))
         clip_gt_lst = [np.array(Image.open(os.path.join(clip_res_fn, fname)).convert('L')) for fname in filelist]
         # FIX shape bug

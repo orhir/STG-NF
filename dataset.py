@@ -60,7 +60,7 @@ class PoseSegDataset(Dataset):
                 gen_dataset(abnormal_train_path, num_clips=num_clips, ret_keys=True,
                             ret_global_data=return_global, **dataset_args)
             self.segs_meta_ab = np.array(self.segs_meta_ab)
-            ab_labels = get_ab_labels(self.segs_data_np_ab, self.segs_meta_ab, self.seg_len,)
+            ab_labels = get_ab_labels(self.segs_data_np_ab, self.segs_meta_ab, path_to_vid_dir, abnormal_train_path)
             num_normal_samp = self.segs_data_np.shape[0]
             num_abnormal_samp = (ab_labels == -1).sum()
             total_num_normal_samp = num_normal_samp + (ab_labels == 1).sum()
