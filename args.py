@@ -77,7 +77,7 @@ def init_parser(default_data_dir='data/', default_exp_dir='data/exp_dir'):
     parser.add_argument('--R', type=float, default=3., help='Features dim dimension')
     parser.add_argument('--temporal_kernel', type=int, default=None, help='Odd integer, temporal conv size')
     parser.add_argument('--edge_importance', action='store_true', help='Adjacency matrix edge weights')
-    parser.add_argument('--flow_permutation', type=str, default='invcov', help='Permutation layer type')
+    parser.add_argument('--flow_permutation', type=str, default='permute', help='Permutation layer type')
     parser.add_argument('--adj_strategy', type=str, default='uniform', help='Adjacency matrix strategy')
     parser.add_argument('--max_hops', type=int, default=8, help='Adjacency matrix neighbours')
 
