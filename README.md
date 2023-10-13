@@ -1,4 +1,4 @@
-# Normalizing Flows for Human Pose Anomaly Detection
+# Normalizing Flows for Human Pose Anomaly Detection [ICCV 2023]
 [![arXiv](https://img.shields.io/badge/arXiv-<2211.10946>-<COLOR>.svg)](https://arxiv.org/abs/2211.10946)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/normalizing-flows-for-human-pose-anomaly/anomaly-detection-on-shanghaitech)](https://paperswithcode.com/sota/anomaly-detection-on-shanghaitech?p=normalizing-flows-for-human-pose-anomaly)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/normalizing-flows-for-human-pose-anomaly/anomaly-detection-on-ubnormal)](https://paperswithcode.com/sota/anomaly-detection-on-ubnormal?p=normalizing-flows-for-human-pose-anomaly)
@@ -13,11 +13,13 @@ The official PyTorch implementation of the paper [**"Normalizing Flows for Human
 ## Citation
 If you find this useful, please cite this work as follows:
 ```
-@article{hirschorn2022human,
-  title = {Normalizing Flows for Human Pose Anomaly Detection},
-  author = {Hirschorn, Or and Avidan, Shai},
-  journal={arXiv preprint arXiv:2211.10946},
-  year = {2022},
+@InProceedings{Hirschorn_2023_ICCV,
+    author    = {Hirschorn, Or and Avidan, Shai},
+    title     = {Normalizing Flows for Human Pose Anomaly Detection},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {13545-13554}
 }
 ```
 
